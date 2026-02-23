@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-blood: #8B0000;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F9E79F;
+}
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-stone-900 font-sans;
+  }
+}
+
+.dna-gradient {
+  background: linear-gradient(180deg, rgba(139, 0, 0, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
